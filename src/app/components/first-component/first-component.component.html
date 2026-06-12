@@ -1,0 +1,53 @@
+<div id="MainContainer">
+    <div class="masterDiv">
+        <div class="empDetailsDiv">Employee Registration</div>
+    </div>
+    <div class="container">
+        <!-- <div class="childDiv_EmpDetails"> Employee Details</div> -->
+        <div class="header">
+            <h2>New Employee</h2>
+            <button class="back-btn">◀ BACK</button>
+        </div>
+    
+        <div class="form-container">
+    
+            <div class="form-row">
+                <label>First Name <span>*</span></label>
+                <input type="text" [(ngModel)]="employeeDetails.firstname">
+            </div>
+    
+            <div class="form-row">
+                <label>Last Name <span>*</span></label>
+                <input type="text" [(ngModel)]="employeeDetails.lastname">
+            </div>
+    
+            <div class="form-row">
+                <label>Email <span>*</span></label>
+                <input type="email"  [(ngModel)]="employeeDetails.email">
+            </div>
+    
+            <div class="form-row">
+                <label>Address <span>*</span></label>
+                <textarea rows="4"  [(ngModel)]="employeeDetails.address"></textarea>
+            </div>
+    
+            <div class="form-row">
+                <label>Phone <span>*</span></label>
+                <input type="text"  [(ngModel)]="employeeDetails.phone">
+            </div>
+    
+            <div class="form-row">
+                <label>Organization <span>*</span></label>
+                <input type="text"  [(ngModel)]="employeeDetails.organization">
+            </div>
+    
+            <div class="footer-container">
+                <button class="submitbtn-footer" (click)="onSubmitClick()" >Submit</button>
+                <button class="clearbtn-footer">Clear</button>
+            </div>
+    
+        </div>
+    
+     
+    </div>
+</div>
