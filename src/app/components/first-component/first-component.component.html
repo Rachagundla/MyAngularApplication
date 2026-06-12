@@ -43,11 +43,16 @@
     
             <div class="footer-container">
                 <button class="submitbtn-footer" (click)="onSubmitClick()" >Submit</button>
-                <button class="clearbtn-footer">Clear</button>
+                <button class="clearbtn-footer" (click)="onClearClick()">Clear</button>
             </div>
     
         </div>
     
      
     </div>
+</div>
+<!-- Below div is responsible rendering the secondComponent in the samepage but it will
+display based on *ngIf and input passing from firstComponent to secondComponent -->
+<div class="secondContainer" *ngIf="employeeDetailsList.length > 0">
+    <app-second-component [employeeDetailsList]="employeeDetailsList"></app-second-component>
 </div>

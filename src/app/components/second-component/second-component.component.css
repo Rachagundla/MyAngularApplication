@@ -1,0 +1,53 @@
+.Maincontainer{
+    background: lightgray;
+    width: 1000px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.container{
+    width: 940px;
+    height: 50px;
+    background-color: violet;
+    display: flex;
+    justify-content: space-between;    
+    font-size: 20px;
+    color: white;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.table-container{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.employeeTable{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+}
+
+.employeeTable th{
+    background-color: #f2f2f2;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.employeeTable td{
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.employeeTable tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+.action-column{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}

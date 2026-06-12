@@ -43,7 +43,7 @@
 
 .header h2 {
     margin: 0;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .back-btn {
@@ -111,3 +111,5 @@
     background-color: gray;
     color: white;
 }
+
+
