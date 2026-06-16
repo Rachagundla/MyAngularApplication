@@ -1,0 +1,32 @@
+.submenu-container {
+    background-color: #ffffff;
+    padding: 12px 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .submenu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .submenu a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .submenu a:hover {
+    background-color: #e0f2fe;
+    color: #0284c7;
+  }
+  
+  .submenu a.active {
+    background-color: #2563eb;
+    color: white;
+  }

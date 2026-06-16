@@ -1,0 +1,13 @@
+<h2>Quotes Dashboard</h2>
+
+<div style="color: red;">
+  <div  *ngFor="let quote of quotes">
+    <p>
+      "{{ quote.quote }}"
+    </p>
+
+    <p class="author">
+      — {{ quote.author }}
+    </p>
+  </div>
+</div>

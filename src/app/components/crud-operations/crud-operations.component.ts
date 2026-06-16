@@ -3,11 +3,13 @@ import { MyUserServiceService } from '../../services/my-user-service.service';
 import { User } from '../../models/userModel';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-crud-operations',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule,RouterModule],
   templateUrl: './crud-operations.component.html',
   styleUrl: './crud-operations.component.css'
 })
@@ -15,7 +17,7 @@ export class CrudOperationsComponent {
 
   userDetails: User[] = [];
 
-  selectedUser: User | null = null;
+  selectedUser: User | null = null;   
 
   userId: number = 0;
 

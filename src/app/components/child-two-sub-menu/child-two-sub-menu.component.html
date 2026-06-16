@@ -1,0 +1,25 @@
+<h2>Comments Dashboard</h2>
+
+<table *ngIf="comments.length > 0">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Comment</th>
+      <th>User</th>
+      <th>Likes</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let comment of comments">
+      <td>{{ comment.id }}</td>
+      <td>{{ comment.body }}</td>
+      <td>{{ comment.user.username }}</td>
+      <td>{{ comment.likes }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="comments.length === 0">
+  No comments available.
+</div>

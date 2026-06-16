@@ -3,6 +3,7 @@ import { EmployeeDetails } from '../../models/employeeModel';
 import { CommonModule } from '@angular/common';     // responsible for providing *ngIf, *ngFor
 import { MyEmployeeService } from '../../services/my-employee.service';
 
+
 @Component({
   selector: 'app-second-component',
   imports: [CommonModule],

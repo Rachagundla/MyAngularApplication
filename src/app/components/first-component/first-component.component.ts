@@ -5,6 +5,7 @@ import { SecondComponentComponent } from '../second-component/second-component.c
 import { CommonModule } from '@angular/common';    // This module helps us to provide *ngIf used in html
 import { MyEmployeeService } from '../../services/my-employee.service';
 
+
 @Component({
   selector: 'app-first-component',
   standalone: true,
