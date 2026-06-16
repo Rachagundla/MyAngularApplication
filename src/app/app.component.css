@@ -1,0 +1,17 @@
+nav ul {
+    list-style-type: none;   /* remove bullets */
+    margin: 0;
+    padding: 0;
+    display: flex;           /* makes items horizontal */
+    gap: 20px;               /* spacing between items */
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+  }
