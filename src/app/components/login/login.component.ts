@@ -28,21 +28,20 @@ export class LoginComponent {
     .subscribe({
 
       next: (response) => {
+  
+        if (response.length > 0) {
 
-        this.router.navigate(['/dashboard/homeComponent']);
-        // if (response.length > 0) {
+          // Store login flag
+         localStorage.setItem('isLoggedIn', 'true');
 
-        //   // Store login flag
-        //   localStorage.setItem('isLoggedIn', 'true');
+          // Navigate to Dashboard
+          this.router.navigate(['/homeComponent']);
 
-        //   // Navigate to Dashboard
-        //   this.router.navigate(['/dashboard']);
+        } else {
 
-        // } else {
-
-        //   this.errorMessage =
-        //     'Invalid Username or Password';
-        // }
+          this.errorMessage =
+            'Invalid Username or Password';
+        }
       },
 
       error: (err) => {

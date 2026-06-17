@@ -7,11 +7,13 @@ import { ChildOneSubMenuComponent } from './components/child-one-sub-menu/child-
 import { ChildTwoSubMenuComponent } from './components/child-two-sub-menu/child-two-sub-menu.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { LoginComponent } from './components/login/login.component';
+import { DashBoardComponent } from './shared/dash-board/dash-board.component';
 
 
 export const routes: Routes = [
-
-  { path: '', redirectTo: 'homeComponent', pathMatch: 'full' },
+  { path: '', component: LoginComponent , pathMatch:'full'},
+  { path: 'login', component: LoginComponent },   // After this dashboardComponet is loaded and not used as route because it is a layout
   { path: 'homeComponent', component: HomeComponent },
   { path: 'fistComponent', component: FirstComponentComponent },
   { path: 'secondComponent', component: SecondComponentComponent },
@@ -33,6 +35,7 @@ export const routes: Routes = [
     {  // This is for creating the lazyloading using the module folder
         path: 'analytics',loadChildren: () => import('./modules/lazy-loading-module/lazy-loading-module.module').then(m => m.LazyLoadingModuleModule)
     },
+
     {
       path: '**', component: PageNotFoundComponent
     }
