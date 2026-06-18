@@ -41,5 +41,11 @@
          Analytics
       </a>
     </li>
+
+    <li>                                          <!--href means "navigate to the current page with an empty fragment (#)".-->
+      <a href="#" (click)="logout($event)">       <!-- When the user clicks this element, call the logout() method and pass the click event object. -->
+        Logout
+      </a>
+    </li>
   </ul>
 </nav>

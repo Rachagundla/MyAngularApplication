@@ -10,11 +10,13 @@ import { Router, RouterModule } from '@angular/router';
 })
 export class DashBoardComponent {
 
-  constructor(
-    private router: Router
-  ) {}
-  logout() {
+  constructor(private router: Router) {}
+
+  logout(event: Event) {
+    event.preventDefault();
+
     localStorage.removeItem('isLoggedIn');
-    this.router.navigate(['/login']);
+
+    this.router.navigate(['/']);
   }
 }
